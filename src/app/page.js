@@ -1,15 +1,19 @@
+import Contact from "@/components/Contact";
+import Gallery from "@/components/Gallery";
 import Hero from "@/components/Hero";
 import Latest from "@/components/Latest";
-import Products from "@/components/Products";
 import Services from "@/components/Services";
+import ServicesTwo from "@/components/ServicesTwo";
 
 export default function Home() {
   return (
     <div>
       <Hero />
       <Services />
-      <Products />
+      <ServicesTwo />
+      <Gallery />
       <Latest />
+      <Contact />
     </div>
   );
 }

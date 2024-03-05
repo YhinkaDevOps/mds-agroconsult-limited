@@ -2,8 +2,8 @@
 // import styles from "../styles/Home.module.css";
 import React, { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [isClick, setisClick] = useState(false);
@@ -14,42 +14,73 @@ const Navbar = () => {
     <nav className="font-sans navbar w-full fixed z-50 bg-white md:px-[20px] lg:px-[50px] xl:px-[120px]">
       <div className="mx-auto py-4 px-2 md:pb-8 md:pt-2">
         <div className="flex justify-between items-end">
-          <Link href="/">
-            <button className="hover:opacity-70 flex items-center flex-shrink-0 pt-5">
+          <Link to="/" spy={true} smooth={true} duration={500}>
+            <button className="text-[#900C3F] font-bold hover:opacity-70 flex items-center flex-shrink-0 pt-5">
               <Image
-                src="/assets/jaykhadine.png"
-                width={100}
+                src="/assets/mds.png"
+                width={30}
                 height={65}
-                alt="header-logo"
+                alt="mds-logo"
               />
+              MDS Agroconsult Limited
             </button>
           </Link>
 
           <div className="hidden md:block">
             <ul className="nav-list flex gap-x-9 items-center text-base">
-              <li className=" text-black font-medium text-sm hover:text-[#32CD32]">
-                <Link className="capitalize" href="/">
+              <li className="cursor-pointer text-black font-medium text-sm hover:text-[#900C3F]">
+                <Link
+                  to="/"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  className="capitalize"
+                >
                   HOME
                 </Link>
               </li>
-              <li className="text-black font-medium text-sm hover:text-[#32CD32]">
-                <Link href="/about-us">ABOUT US</Link>
+              <li className="cursor-pointer text-black font-medium text-sm hover:text-[#900C3F]">
+                <Link
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  offset={-55}
+                >
+                  ABOUT US
+                </Link>
               </li>
-              <li className="text-black font-medium text-sm hover:text-[#32CD32]">
-                <Link href="/products">OUR PRODUCTS</Link>
+              <li className="cursor-pointer text-black font-medium text-sm hover:text-[#900C3F]">
+                <Link
+                  to="service"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  offset={-55}
+                >
+                  SERVICES
+                </Link>
               </li>
-              <li className="text-black font-medium text-sm hover:text-[#32CD32]">
-                <Link href="/contact-us">CONTACT US</Link>
+              <li className="cursor-pointer text-black font-medium text-sm hover:text-[#900C3F]">
+                <Link
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  offset={-55}
+                >
+                  CONTACT
+                </Link>
               </li>
             </ul>
           </div>
 
-          <div className="flex items-center p-2 rounded-md focus:outline-none md:hidden border-2 border-[#7CFC00]">
+          <div className="flex items-center p-2 rounded-md focus:outline-none md:hidden border-2 border-[#333663]">
             <button onClick={handleClick}>
               {isClick ? (
-                <FaTimes color="#32CD32" size={30} />
+                <FaTimes color="#333663" size={30} />
               ) : (
-                <FaBars color="#32CD32" size={30} />
+                <FaBars color="#333663" size={30} />
               )}
             </button>
           </div>
@@ -58,20 +89,52 @@ const Navbar = () => {
 
       <div>
         {isClick && (
-          <div className="bg-[#32CD32] md:hidden">
+          <div className="bg-[#333663] md:hidden">
             <div className="px-2 pt-2 pb-2 space-y-1 sm:px-3">
               <ul className="list-none space-y-2">
-                <li className="text-white hover:bg-white font-medium hover:text-black rounded-lg p-2">
-                  <Link href="/">HOME</Link>
+                <li className="cursor-pointer text-white hover:bg-white font-medium hover:text-black rounded-lg p-2">
+                  <Link
+                    to="/"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    className="capitalize"
+                  >
+                    HOME
+                  </Link>
                 </li>
                 <li className="text-white hover:bg-white font-medium hover:text-black rounded-lg p-2">
-                  <Link href="/about-us">ABOUT US</Link>
+                  <Link
+                    to="about"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-55}
+                  >
+                    ABOUT
+                  </Link>
                 </li>
                 <li className="text-white hover:bg-white font-medium hover:text-black rounded-lg p-2">
-                  <Link href="/products">OUR PRODUCTS</Link>
+                  <Link
+                    to="service"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-55}
+                  >
+                    SERVICES
+                  </Link>
                 </li>
                 <li className="text-white hover:bg-white font-medium hover:text-black rounded-lg p-2">
-                  <Link href="/contact-us">CONTACT US</Link>
+                  <Link
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-55}
+                  >
+                    CONTACT
+                  </Link>
                 </li>
               </ul>
             </div>

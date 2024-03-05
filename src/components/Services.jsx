@@ -4,43 +4,39 @@ import React from "react";
 
 const Services = () => {
   return (
-    <div className="font-serif min-h-[300px] mx-auto py-12 flex flex-col">
+    <div name="about" className=" min-h-[300px] mx-auto py-12 flex flex-col">
       <div className="px-4 lg:px-0">
+        <div className="text-center mb-10">
+          <p className="text-4xl md:text-5xl font-bold inline border-b-4 border-pink-600 text-black">
+            About Us
+          </p>
+        </div>
+
         <h6 className="text-center mb-5 text-2xl">
-          WELCOME TO JAYKHADINE FARMS LIMITED
+          WELCOME TO MDS AGROCONSULT LIMITED
         </h6>
-        <p className="text-center lg:mx-[200px] mb-5">
-          Located in the heart of Sango Ota, we take pride in our commitment to
-          sustainable agriculture and excellence in farming practices. At
-          Jaykhadine Farms, we specialize in both crop and animal production,
-          striving to provide the finest quality produce to our valued
-          customers.
+        <p className="text-center lg:mx-[200px] mb-5 text-lg">
+          MDS Agroconsult Limited is a leading player in the agricultural
+          landscape, specializing in crop farming, horticulture, and consultancy
+          services. With a steadfast commitment to excellence, we offer a
+          comprehensive suite of products and services tailored to meet the
+          diverse needs of our clients. From the sale of top-quality farm inputs
+          to the provision of premium seedlings, and from the establishment of
+          farms to expert consultancy services, we are dedicated to driving
+          innovation and sustainable growth in the agricultural sector.
         </p>
 
-        <p className="text-center lg:mx-[200px] mb-5">
-          With a focus on innovation and environmental stewardship, our team is
-          dedicated to leveraging modern farming techniques to maximize yields
-          while minimizing our ecological footprint. From cultivating a wide
-          range of crops to raising healthy livestock, we ensure that every
-          aspect of our operation reflects our core values of integrity,
-          quality, and sustainability.
+        <p className="text-center lg:mx-[200px] mb-5 text-lg">
+          Our team of seasoned professionals brings a wealth of expertise and
+          experience, ensuring that we deliver exceptional results and exceed
+          expectations at every turn. At MDS Agroconsult Limited, we are not
+          just cultivating crops; we are nurturing a future of agricultural
+          prosperity."
         </p>
 
-        <p className="text-center lg:mx-[200px] mb-5">
-          In addition to our farming activities, we also offer hunting and
-          related services, providing outdoor enthusiasts with memorable
-          experiences in nature.
-        </p>
+        {/* <h6 className="text-center text-3xl">WHAT WE DO</h6> */}
 
-        <p className="text-center lg:mx-[200px] mb-10">
-          Join us on our journey as we continue to grow, nurture, and harvest
-          the bounty of our land, serving our community and beyond with the
-          finest agricultural products and services.
-        </p>
-
-        <h6 className="text-center text-3xl">WHAT WE DO</h6>
-
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 mx-auto max-w-[1000px] p-2 mt-5 ">
+        {/* <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 mx-auto max-w-[1000px] p-2 mt-5 ">
           <div className="flex flex-col gap-3 items-center">
             <p className="font-bold text-[20px]">Animal Production</p>
             <p className="text-[#8f8f8f] text-justify">
@@ -87,7 +83,7 @@ const Services = () => {
               testament to our dedication to excellence.
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

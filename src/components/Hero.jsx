@@ -1,77 +1,56 @@
 "use client";
-import Link from "next/link";
+
+import { Link } from "react-scroll";
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { motion, useInView, useAnimation, Variant } from "framer-motion";
+import backgroundImage from "../../public/assets/hero-bg.jpg";
 
 // Import Swiper styles
 import "swiper/css";
 
 const Hero = () => {
   return (
-    <div className="hero-image min-h-screen">
+    <div>
+      <div
+        style={{
+          backgroundImage: `url(${backgroundImage.src})`,
+        }}
+        className="hero-image min-h-screen "
+        name="/"
+      ></div>
       <div className="bg-text mt-28">
         <Swiper className="mySwiper">
-          {/* <SwiperSlide className="animate__animated animate__bounce">
-            <div className="flex flex-col gap-8">
-              <h1 className="text-4xl leading-10">
-                Where Purity Meets Process, Excellence &nbsp;
-                <span className="text-red-600">in Every Bite.</span>
-              </h1>
-              <p>
-                Our commitment to quality shines through every product, ensuring
-                that your culinary creations are always a notch above.
-              </p>
-
-              <div>
-                <button className="px-7 py-3 bg-red-600 hover:bg-orange-600 transition duration-300 ease-in-out">
-                  <Link href="/contact-us">Contact Us</Link>
-                </button>
-              </div>
-            </div>
-          </SwiperSlide> */}
-
           <SwiperSlide>
             <div className="font-sans flex flex-col gap-8">
               <h1 className="text-4xl tracking-tight">
-                Nourishing Lives,&nbsp;
-                <span className="text-red-600">Transforming Poultry.</span>
+                Cultivating Growth Together: Your Premier Agro-Solutions Partner
               </h1>
               <p>
-                Born from the fusion of farm-to-table philosophy and
-                cutting-edge food processing, we take pride in converting live
-                broiler chicken into a symphony of flavors, expertly preserved
-                and elegantly packaged.
+                At MDS Agroconsult Limited, we sow the seeds of innovation,
+                nurture growth, and reap the rewards of agricultural excellence.
+                As a premier agro-based firm, we specialize in every facet of
+                crop farming and consultancy, offering a comprehensive range of
+                products and services tailored to meet the diverse needs of our
+                clients.
               </p>
 
               <div>
                 <button className="px-7 py-3 bg-[#7CFC00] rounded-md hover:bg-orange-600 transition duration-300 ease-in-out">
-                  <Link href="/about-us">Learn More</Link>
+                  <Link
+                    to="about"
+                    spy={true}
+                    smooth={true}
+                    offset={-55}
+                    duration={500}
+                  >
+                    Learn More
+                  </Link>
                 </button>
               </div>
             </div>
           </SwiperSlide>
-          {/* <SwiperSlide>
-            <div className="flex flex-col gap-8">
-              <h1 className="text-4xl tracking-tight">
-                Quality Finished Products For All With Best &nbsp;
-                <span className="text-red-600">Cold Cut</span>
-              </h1>
-              <p>
-                We specialize in the seamless transformation of live broiler
-                chicken into meticulously preserved and thoughtfully packaged
-                frozen delights. From our farm to your table, savor the taste of
-                quality and convenience, crafted with care and delivered with
-                precision.
-              </p>
-              <div>
-                <button className="px-7 py-3 bg-red-600 hover:bg-orange-600 transition duration-300 ease-in-out">
-                  <Link href="/products">View Our Products</Link>
-                </button>
-              </div>
-            </div>
-          </SwiperSlide> */}
         </Swiper>
       </div>
     </div>
