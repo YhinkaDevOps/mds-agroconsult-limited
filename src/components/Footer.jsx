@@ -36,21 +36,6 @@ const Footer = () => {
           <span className="text-sm">opesegun223@gmail.com</span>
         </div>
 
-        {/* Useful links */}
-        {/* <div className="pt-2 flex flex-col gap-2">
-          <h1 className="font-bold">Useful Links</h1>
-          <Link href="#">
-            <button className="hover:opacity-70 text-sm flex items-center flex-shrink-0  hover:underline">
-              Terms and conditions
-            </button>
-          </Link>
-          <Link href="#">
-            <button className="hover:opacity-70 text-sm flex items-center flex-shrink-0 hover:underline">
-              Privacy policy
-            </button>
-          </Link>
-        </div> */}
-
         {/* Social Links */}
         <div className="pt-2 flex flex-col gap-2 md:items-center">
           <h1 className="font-bold">Connect With Us</h1>
@@ -62,7 +47,7 @@ const Footer = () => {
             </button> */}
 
             <button className="hover:opacity-70">
-              <Link href="https://www.linkedin.com/in/igbeia-joseph-761b0bb2?originalSubdomain=ng">
+              <Link href="/">
                 <FaLinkedin size={30} />
               </Link>
             </button>
