@@ -33,7 +33,7 @@ const Footer = () => {
           </span> */}
           <span className="text-sm">+(234) 08056448422 - enquiry</span>
           <span className="text-sm">+(234) 08034665279</span>
-          <span className="text-sm">opesegun223@gmail.com</span>
+          <span className="text-sm">mdsagroconsultlimited@gmail.com</span>
         </div>
 
         {/* Social Links */}

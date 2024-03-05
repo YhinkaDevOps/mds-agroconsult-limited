@@ -75,7 +75,7 @@ const Contact = () => {
 
           <h3 className="text-[#444444] text-2xl font-semibold">Email Us</h3>
           <div>
-            <p>opesegun223@gmail.com</p>
+            <p>mdsagroconsultlimited@gmail.com</p>
           </div>
         </div>
       </div>
