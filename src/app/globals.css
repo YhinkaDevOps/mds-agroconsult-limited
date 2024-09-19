@@ -11,11 +11,12 @@
   padding: 0;
   margin: 0;
   /* font-family: "Lato", sans-serif; */
-  overflow-x: hidden;
+ 
 }
 
 .navbar {
   box-shadow: rgb(128, 128, 128) 0px 0px 5px 0px;
+   overflow: hidden;
 }
 
 .hero-image {
