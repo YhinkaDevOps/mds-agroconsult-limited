@@ -7,7 +7,7 @@ import ServicesTwo from "@/components/ServicesTwo";
 
 export default function Home() {
   return (
-    <div>
+    <div className="overflow-x-auto">
       <Hero />
       <Services />
       <ServicesTwo />
