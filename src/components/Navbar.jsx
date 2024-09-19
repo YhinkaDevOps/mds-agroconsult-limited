@@ -11,7 +11,7 @@ const Navbar = () => {
   const handleClick = () => setisClick(!isClick);
 
   return (
-    <nav className="font-sans navbar w-full fixed z-50 bg-white md:px-[20px] lg:px-[50px] xl:px-[120px]">
+    <nav className="font-sans navbar w-full fixed z-50 bg-white md:px-[20px] lg:px-[50px] xl:px-[80px]">
       <div className="mx-auto py-4 px-2 md:pb-8 md:pt-2">
         <div className="flex justify-between items-end">
           <Link to="/" spy={true} smooth={true} duration={500}>
