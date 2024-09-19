@@ -3,7 +3,7 @@ import "./globals.css";
 import { ChakraProvider } from "@chakra-ui/react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import Footnote from "@/components/Footnote";
+// import Footnote from "@/components/Footnote";
 import Pagenote from "@/components/Pagenote";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
           <main>{children}</main>
           <Pagenote />
           <Footer />
-          <Footnote />
+          {/* <Footnote /> */}
         </ChakraProvider>
       </body>
     </html>
