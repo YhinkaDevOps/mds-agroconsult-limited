@@ -20,7 +20,7 @@ const Contact = () => {
         </div>
       </div>
       {/* Contact Container */}
-      <div className="mx-auto max-w-[1099px] my-10 px-2 md:px-0 w-full grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-4">
+      <div className="mx-auto md:max-w-[1099px] my-10 px-2 md:px-0 w-full grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-4">
         <div className="mx-auto max-w-[550px] my-5 px-4">
           <Swiper
             spaceBetween={30}
